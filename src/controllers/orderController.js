@@ -1,6 +1,6 @@
 const Order = require("../models/order");
 const Cart = require("../models/cart");
-const pool = require("../config/dataBasePostgres");
+const { pool } = require("../config/dataBasePostgres");
 
 exports.createOrderFromCart = async (req, res) => {
   const { userId } = req.params;
@@ -9,7 +9,7 @@ exports.createOrderFromCart = async (req, res) => {
     if (isNaN(userId)) {
       return res.status(400).json({ mensaje: 'El userId debe ser un número válido' });
   }
-  const userResult = await pool.query('SELECT * FROM users WHERE id = $1', [usuarioId]);
+  const userResult = await pool.query('SELECT * FROM users WHERE id = $1', [userId]);
   if (userResult.rowCount === 0) {
       return res.status(404).json({ message: 'Usuario no encontrado en PostgreSQL' });
   }

@@ -1,6 +1,6 @@
 const Cart = require("../models/cart");
 const Product = require("../models/product");
-const pool = require("../config/dataBasePostgres"); // Importa directamente el pool
+const { pool } = require("../config/dataBasePostgres"); // Importa directamente el pool
 
 // Crear carrito
 exports.createCart = async (req, res) => {

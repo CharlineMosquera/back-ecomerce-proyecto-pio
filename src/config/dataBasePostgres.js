@@ -11,8 +11,8 @@ const pool = new Pool({
     connectionTimeoutMillis: 2000  // Timeout de conexión
 });
 
-/* pool.connect()
+pool.connect()
     .then(() => console.log('Conexión exitosa a PostgreSQL'))
-    .catch(err => console.error('Error al conectar a PostgreSQL:', err.message)); */
+    .catch(err => console.error('Error al conectar a PostgreSQL:', err.message));
 
 module.exports = { pool };
