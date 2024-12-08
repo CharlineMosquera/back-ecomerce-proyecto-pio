@@ -22,7 +22,8 @@ Aqui se muestra como se puede crear el objeto en la coleccion a partir de un JSO
     "description": "Encuentra los mejores equipos de cómputo, desde potentes computadoras de escritorio hasta laptops de alto rendimiento. Perfectos para profesionales, gamers y estudiantes que buscan velocidad, capacidad y tecnología avanzada."
 }
 ```
-**Colección:**
+**Colección:**  
+
 ![Categorias](/img/ColeccionCategorias.png)
 
 
@@ -49,7 +50,8 @@ La colección Products almacena la información de los productos disponibles par
     "category": "674a84408adf11109acef3b0"
 }
 ```
-**Colección:**
+**Colección:** 
+
 ![Productos](/img/ColeccionProductos.png)
 
 
@@ -79,7 +81,8 @@ La colección Carts almacena los productos guardados en el carrito por cada usua
     ]
 }
 ```
-**Colección:**
+**Colección:** 
+
 ![Carrito](/img/ColeccionCarrito.png)
 
 
@@ -115,7 +118,8 @@ La colección Orders registra las ordenes de compra realizadas por los usuarios.
     "total": 3290000
 }
 ```
-**Colección:**
+**Colección:** 
+
 ![Ordenes](/img/ColeccionOrdenes.png)
 
 
@@ -146,5 +150,6 @@ La tabla users almacena la información de los clientes y administradores del si
 }
 
 ```
-**Tabla:**
+**Tabla:** 
+
 ![Usuarios](/img/TablaUsuarios.png)
